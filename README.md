@@ -512,17 +512,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## Author
-
-**Harsh Lad**  
-Full Stack & AI Engineer
-
-- **GitHub**: [@ladHarsh](https://github.com/ladHarsh)
-- **Portfolio**: [harshlad.vercel.app](https://harshlad.vercel.app/)
-- **Email**: harshlad.dev@gmail.com
-
----
-
 ## Acknowledgments
 
 - **Google Gemini AI** for intelligent itinerary generation
