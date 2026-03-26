@@ -506,11 +506,7 @@ NODE_ENV=production npm start
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**.
-
----
+ 
 
 ## Acknowledgments
 
@@ -522,18 +518,3 @@ This project is licensed under the **MIT License**.
 - **Vercel** & **Render** for free hosting
 - **React** and **Node.js** communities
 
----
-
-## Support
-
-If you encounter issues:
-
-1. Check the [Issues](https://github.com/ladHarsh/AI-TripPlanner/issues) page
-2. Create a new issue with detailed information
-3. Contact: harshlad.dev@gmail.com
-
----
-
-**AI Trip Planner** — Practical AI-assisted travel planning with real-world, free data.
-
-Made with ❤️ by Harsh Lad
