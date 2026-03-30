@@ -133,6 +133,19 @@ app.get("/api/health", (req, res) => {
   });
 });
 
+// Root route fallback
+app.all("/", (req, res) => {
+  if (process.env.NODE_ENV === "production") {
+    return res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  }
+
+  return res.status(200).json({
+    success: true,
+    message:
+      "AI Trip Planner API is running. Use /api/health or access the React client on http://localhost:3000",
+  });
+});
+
 // API routes with specific rate limiting
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
