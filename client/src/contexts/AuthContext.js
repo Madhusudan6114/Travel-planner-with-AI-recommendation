@@ -158,7 +158,12 @@ export const AuthProvider = ({ children }) => {
       return { success: true };
     } catch (error) {
       dispatch({ type: "AUTH_FAIL" });
-      const message = error.response?.data?.message || "Registration failed";
+      let message = error.response?.data?.message || "Registration failed";
+      
+      if (error.response?.data?.errors && Array.isArray(error.response.data.errors) && error.response.data.errors.length > 0) {
+        message = error.response.data.errors[0].msg || error.response.data.errors[0].message || message;
+      }
+      
       toast.error(message);
       return { success: false, message };
     }

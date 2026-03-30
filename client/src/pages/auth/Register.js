@@ -36,6 +36,8 @@ const Register = () => {
         name: {
           required: true,
           minLength: 2,
+          pattern: /^[a-zA-Z\s'-]+$/,
+          message: "Name can only contain letters, spaces, hyphens and apostrophes",
         },
         email: {
           required: true,
@@ -44,6 +46,8 @@ const Register = () => {
         password: {
           required: true,
           minLength: 8,
+          pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])/,
+          message: "Password must have uppercase, lowercase, number, and special character",
         },
         confirmPassword: {
           required: true,
